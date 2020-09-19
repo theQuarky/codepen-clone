@@ -1,0 +1,55 @@
+[debug] [2020-09-19T17:56:19.310Z] ----------------------------------------------------------------------
+[debug] [2020-09-19T17:56:19.313Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Radio Active\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-19T17:56:19.313Z] CLI Version:   8.9.2
+[debug] [2020-09-19T17:56:19.313Z] Platform:      win32
+[debug] [2020-09-19T17:56:19.313Z] Node Version:  v12.18.3
+[debug] [2020-09-19T17:56:19.314Z] Time:          Sat Sep 19 2020 23:26:19 GMT+0530 (India Standard Time)
+[debug] [2020-09-19T17:56:19.314Z] ----------------------------------------------------------------------
+[debug] [2020-09-19T17:56:19.314Z] 
+[debug] [2020-09-19T17:56:19.322Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-19T17:56:19.323Z] > authorizing via signed-in user
+[debug] [2020-09-19T17:56:19.323Z] [iam] checking project code-pen-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-19T17:56:19.326Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/code-pen-clone:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-19T17:56:24.119Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 17:56:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=987","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-19T17:56:24.120Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/code-pen-clone  
+ 
+[debug] [2020-09-19T17:56:27.364Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 17:56:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'code-pen-clone'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-19T17:56:27.369Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/code-pen-clone/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-19T17:56:32.579Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 17:56:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[code-pen-clone]: beginning deploy... 
+[info] i  hosting[code-pen-clone]: found 21 files in build 
+[debug] [2020-09-19T17:56:32.595Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2020-09-19T17:56:32.939Z] [hosting] hash cache [YnVpbGQ] stored for 21 files
+[debug] [2020-09-19T17:56:32.940Z] [hosting][hash queue][FINAL] {"max":334,"min":12,"avg":29.714285714285715,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":344}
+[debug] [2020-09-19T17:56:32.940Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/code-pen-clone/versions/c961285a2aa68039:populateFiles  
+ <request body omitted>
+[debug] [2020-09-19T17:56:36.709Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 17:56:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-19T17:56:36.721Z] [hosting][populate queue][FINAL] {"max":3774,"min":3774,"avg":3774,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3784}
+[debug] [2020-09-19T17:56:36.721Z] [hosting] uploads queued: 21
+[debug] [2020-09-19T17:57:17.871Z] [hosting][upload queue][FINAL] {"max":41159,"min":4805,"avg":11081.714285714286,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":41161}
+[info] +  hosting[code-pen-clone]: file upload complete 
+[debug] [2020-09-19T17:57:17.872Z] [hosting] deploy completed after 45292ms
+[debug] [2020-09-19T17:57:17.874Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "code-pen-clone"
+    },
+    "site": "code-pen-clone",
+    "version": "sites/code-pen-clone/versions/c961285a2aa68039"
+  }
+]
+[info] i  hosting[code-pen-clone]: finalizing version... 
+[debug] [2020-09-19T17:57:17.875Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/code-pen-clone/versions/c961285a2aa68039?updateMask=status  
+ {"status":"FINALIZED"}
